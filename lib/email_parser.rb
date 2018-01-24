@@ -6,6 +6,9 @@
 class EmailParser
   attr_accessor :email_list
 
+  def parse(csv_emails)
+    array = csv_emails.split(/\s|\,/)
+  end
 
 
 
