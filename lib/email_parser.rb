@@ -6,7 +6,7 @@
 class EmailParser
   attr_accessor :email_list
 
-  def self.parse(csv_emails)
+  def parse(csv_emails)
     array = csv_emails.split(/\s|\,/)
     array.uniq
     array
