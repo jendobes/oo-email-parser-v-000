@@ -10,7 +10,7 @@ class EmailParser
     @emails = emails
   end
 
-  def parse(csv_emails)
+  def parse(emails)
     array = csv_emails.split(/\s|\,/)
     array.uniq
     array
