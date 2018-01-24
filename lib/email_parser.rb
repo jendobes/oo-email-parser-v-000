@@ -8,6 +8,7 @@ class EmailParser
 
   def parse(csv_emails)
     array = csv_emails.split(/\s|\,/)
+    array.uniq
   end
 
 
