@@ -11,9 +11,7 @@ class EmailParser
   end
 
   def parse(emails)
-    array = csv_emails.split(/\s|\,/)
-    array.uniq
-    array
-  end
+    array = emails.split(/\s|\,/)
+  end.flatten.end
 
 end
